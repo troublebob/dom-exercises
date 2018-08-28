@@ -28,7 +28,7 @@ container.appendChild(header3);
 container.appendChild(newdiv);
 
 var btn = document.querySelector('#btn');
-btn.onclick = () => alert("Hello World through the medium of javascript");
+//btn.onclick = () => alert("Hello World through the medium of javascript");
 /*
 var btn1 = document.querySelector('#btn1');
 btn1.addEventListener('click', () => {
@@ -40,5 +40,15 @@ btn1.addEventListener('click',  function(e){
     console.log(e);
     console.log(e.target);
     e.target.style.background = 'blue'
-    alert("Hello World through the medium of an Eventlistener!");
+    //alert("Hello World through the medium of an Eventlistener!");
 });
+btn1.onclick(alertFunction("Hello World through the medium of an Eventlistener!"));
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    alertFunction(button.id);
+  });
+});
+function alertFunction(s){
+  alert(s);
+}

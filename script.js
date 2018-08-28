@@ -42,13 +42,15 @@ btn1.addEventListener('click',  function(e){
     e.target.style.background = 'blue'
     //alert("Hello World through the medium of an Eventlistener!");
 });
-btn1.onclick(alertFunction("Hello World through the medium of an Eventlistener!"));
+btn1.onclick=alertFunction("Hello World through the medium of an Eventlistener!");
+
 const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
   button.addEventListener('click', (e) => {
     alertFunction(button.id);
   });
 });
+
 function alertFunction(s){
   alert(s);
 }

@@ -40,9 +40,9 @@ btn1.addEventListener('click',  function(e){
     console.log(e);
     console.log(e.target);
     e.target.style.background = 'blue'
-    //alert("Hello World through the medium of an Eventlistener!");
+    alert("Hello World through the medium of an Eventlistener!");
 });
-btn1.onclick=alertFunction("Hello World through the medium of an Eventlistener!");
+//btn1.onclick=alertFunction("Hello World! onclick using alertFunction");
 
 const buttons = document.querySelectorAll('button');
 buttons.forEach((button) => {
